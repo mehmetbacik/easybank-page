@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Public_Sans } from "next/font/google";
 import "@/styles/styles.scss"
-import "./globals.css";
+import "@/styles/globals.scss";
 
 const public_sans = Public_Sans({ subsets: ["latin"] });
 
