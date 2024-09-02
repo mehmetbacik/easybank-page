@@ -1,5 +1,81 @@
 @import "../../../styles/variables.scss";
 
 .footer {
-    background-color: $bright-cyan;
+    background-color: $dark-blue;
+    color: $white;
+    padding: 40px 20px;
+    @media (max-width: 768px) {
+        padding: 20px;
+    }
+    .footerContent {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        @media (max-width: 768px) {
+            flex-direction: column;
+            align-items: center;
+        }
+        .logoAndSocial {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            @media (max-width: 768px) {
+                align-items: center;
+                margin-bottom: 20px;
+            }
+            .socialIcons {
+                margin-top: 20px;
+                display: flex;
+                gap: 15px;
+            }
+        }
+        .footerLinks {
+            display: flex;
+            gap: 50px;
+            @media (max-width: 768px) {
+                flex-direction: column;
+                gap: 20px;
+                text-align: center;
+            }
+            ul {
+                list-style: none;
+                padding: 0;
+                li {
+                    margin-bottom: 10px;
+                    a {
+                        text-decoration: none;
+                        color: $white;
+                        font-weight: 500;
+                        &:hover {
+                            color: $lime-green;
+                        }
+                    }
+                }
+            }
+        }
+        .cta {
+            text-align: right;
+            @media (max-width: 768px) {
+                text-align: center;
+                margin-top: 20px;
+            }
+            .inviteButton {
+                background-color: $lime-green;
+                color: $white;
+                border: none;
+                padding: 10px 20px;
+                border-radius: 20px;
+                cursor: pointer;
+                font-weight: 700;
+                &:hover {
+                    background-color: $lime-green;
+                }
+            }
+            .copyright {
+                margin-top: 15px;
+                font-size: 14px;
+            }
+        }
+    }
 }
