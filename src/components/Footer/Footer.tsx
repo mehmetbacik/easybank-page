@@ -2,8 +2,8 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import styles from "./styles/Footer.module.scss";
-import { socialIcons } from "@/data/socialIcons";
-import { footerLinks } from "@/data/footerLinks";
+import { socialIcons } from "@/data/socialIconsData";
+import { footerLinks } from "@/data/footerLinksData";
 
 const Footer: React.FC = () => {
   return (
