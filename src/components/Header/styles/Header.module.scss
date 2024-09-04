@@ -10,9 +10,8 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 20px;
         @media (max-width: 768px) {
-            padding: 10px;
+            padding: 25px;
         }
         position: relative;
         .logo {
@@ -26,8 +25,6 @@
             }
             flex-direction: column;
             justify-content: space-between;
-            width: 25px;
-            height: 20px;
             cursor: pointer;
             .bar,
             .barOpen {
@@ -91,7 +88,13 @@
                         font-weight: 500;
                         border-bottom: solid 5px transparent;
                         transition-duration: 300ms;
-                        padding-bottom: 28px;
+                        padding-top: 25px;
+                        padding-bottom: 25px;
+                        @media (max-width: 768px) {
+                            padding-top: 0;
+                            padding-bottom: 0;
+                        }
+                        display: block;
                         &:hover {
                             color: $dark-blue;
                             border-color: $lime-green;
