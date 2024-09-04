@@ -1,110 +1,120 @@
 @import "../../../styles/variables.scss";
 
 .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    @media (max-width: 768px) {
-        padding: 10px;
-    }
+    position: sticky;
+    top: 0;
+    z-index: 999;
     background-color: $white;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    position: relative;
-    .logo {
+    .header_content {
         display: flex;
-        align-items: center;
-    }
-    .hamburger {
-        display: none;
-        @media (max-width: 768px) {
-            display: flex;
-        }
-        flex-direction: column;
         justify-content: space-between;
-        width: 25px;
-        height: 20px;
-        cursor: pointer;
-        .bar,
-        .barOpen {
-            height: 2px;
-            width: 100%;
-            background-color: $dark-blue;
-            transition: all 0.3s ease;
-            &.barOpen {
-                background-color: $lime-green;
-                &:nth-child(1) {
-                    transform: rotate(45deg) translate(5px, 5px);
-                }
-                &:nth-child(2) {
-                    opacity: 0;
-                }
-                &:nth-child(3) {
-                    transform: rotate(-45deg) translate(5px, -5px);
-                }
-            }
-        }
-    }
-    .nav {
-        display: flex;
-        flex: 1;
-        justify-content: center;
+        align-items: center;
+        padding: 20px;
         @media (max-width: 768px) {
-            display: none;
-            position: absolute;
-            top: 60px;
-            left: 0;
-            width: 100%;
-            background-color: $white;
-            flex-direction: column;
+            padding: 10px;
+        }
+        position: relative;
+        .logo {
+            display: flex;
             align-items: center;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            z-index: 10;
-            &.navOpen {
+        }
+        .hamburger {
+            display: none;
+            @media (max-width: 768px) {
                 display: flex;
             }
-        }
-        .menu {
-            display: flex;
-            list-style: none;
-            margin: 0;
-            padding: 0;
-            @media (max-width: 768px) {
-                flex-direction: column;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 25px;
+            height: 20px;
+            cursor: pointer;
+            .bar,
+            .barOpen {
+                height: 2px;
                 width: 100%;
-            }
-            .menuItem {
-                margin: 0 15px;
-                @media (max-width: 768px) {
-                    margin: 10px 0;
-                    width: 100%;
-                    text-align: center;
-                }
-                a {
-                    text-decoration: none;
-                    color: $dark-blue;
-                    font-weight: 500;
-                    &:hover {
-                    color: $lime-green;
+                background-color: $dark-blue;
+                transition: all 0.3s ease;
+                &.barOpen {
+                    background-color: $lime-green;
+                    &:nth-child(1) {
+                        transform: rotate(45deg) translate(5px, 5px);
+                    }
+                    &:nth-child(2) {
+                        opacity: 0;
+                    }
+                    &:nth-child(3) {
+                        transform: rotate(-45deg) translate(5px, -5px);
                     }
                 }
             }
         }
-    }
-    .cta {
-        @media (max-width: 768px) {
-            display: none;
+        .nav {
+            display: flex;
+            flex: 1;
+            justify-content: center;
+            @media (max-width: 768px) {
+                display: none;
+                position: absolute;
+                top: 60px;
+                left: 0;
+                width: 100%;
+                background-color: $white;
+                flex-direction: column;
+                align-items: center;
+                box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+                z-index: 10;
+                &.navOpen {
+                    display: flex;
+                }
+            }
+            .menu {
+                display: flex;
+                list-style: none;
+                margin: 0;
+                padding: 0;
+                @media (max-width: 768px) {
+                    flex-direction: column;
+                    width: 100%;
+                }
+                .menuItem {
+                    margin: 0 15px;
+                    @media (max-width: 768px) {
+                        margin: 10px 0;
+                        width: 100%;
+                        text-align: center;
+                    }
+                    a {
+                        font-size: 1rem;
+                        text-decoration: none;
+                        color: $grayish-blue;
+                        font-weight: 500;
+                        border-bottom: solid 5px transparent;
+                        transition-duration: 300ms;
+                        padding-bottom: 28px;
+                        &:hover {
+                            color: $dark-blue;
+                            border-color: $lime-green;
+                        }
+                    }
+                }
+            }
         }
-        .inviteButton {
-            background-color: $lime-green;
-            color: $white;
-            border: none;
-            padding: 10px 20px;
-            border-radius: 20px;
-            cursor: pointer;
-            font-weight: 700;
-            &:hover {
-                background-color: $lime-green;
+        .cta {
+            @media (max-width: 768px) {
+                display: none;
+            }
+            .inviteButton {
+                font-size: 1rem;
+                background: linear-gradient(to left, $bright-cyan, $lime-green);
+                color: $white;
+                border: none;
+                padding: 10px 30px;
+                border-radius: 30px;
+                font-weight: 500;
+                &:hover {
+                    background: linear-gradient(to left, $light-bright-cyan, $light-lime-green);
+                }
             }
         }
     }
