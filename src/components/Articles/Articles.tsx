@@ -1,7 +1,7 @@
-import React from 'react';
-import Image from 'next/image';
-import styles from './styles/Articles.module.scss';
-import { articles } from '@/data/articlesData';
+import React from "react";
+import Image from "next/image";
+import styles from "./styles/Articles.module.scss";
+import { articles } from "@/data/articlesData";
 
 const Articles: React.FC = () => {
   return (
@@ -11,7 +11,12 @@ const Articles: React.FC = () => {
         {articles.map((article, index) => (
           <div key={index} className={styles.card}>
             <div className={styles.imageWrapper}>
-              <Image src={article.image} alt={article.title} width={350} height={233} />
+              <Image
+                src={article.image}
+                alt={article.title}
+                width={350}
+                height={233}
+              />
             </div>
             <div className={styles.cardContent}>
               <p className={styles.author}>By {article.author}</p>

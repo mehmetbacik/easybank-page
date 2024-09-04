@@ -1,5 +1,71 @@
 @import "../../../styles/variables.scss";
 
 .hero {
-    background-color: $lime-green;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  @media (min-width: 768px) {
+    flex-direction: row;
+    text-align: left;
+  }
+  .content {
+    z-index: 1;
+    width: 100%;
+    .title {
+      font-size: 2.5rem;
+      color: $dark-blue;
+      margin-bottom: 1rem;
+    }
+    .description {
+      font-size: 1rem;
+      color: $grayish-blue;
+      margin-bottom: 2rem;
+    }
+    .inviteButton {
+      padding: 0.75rem 2rem;
+      background-color: $lime-green;
+      color: $white;
+      border: none;
+      border-radius: 25px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        background-color: $lime-green;
+      }
+    }
+  }
+  .imageWrapper {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    z-index: 1; 
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      top: -50px;
+      left: -100px;
+      width: 100%;
+      height: 100%;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-image: url("/img/bg-intro-mobile.svg");
+      z-index: -1;
+      @media (min-width: 768px) {
+        top: -150px;
+        left: -250px;
+        background-image: url("/img/bg-intro-desktop.svg");
+        background-position: right;
+      }
+    }
+  }
 }
