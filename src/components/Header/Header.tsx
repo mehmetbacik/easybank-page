@@ -22,6 +22,7 @@ const Header: React.FC = () => {
             alt="Easybank Logo"
             width={150}
             height={40}
+            priority
           />
         </div>
         <div className={styles.hamburger} onClick={toggleMenu}>
@@ -30,6 +31,7 @@ const Header: React.FC = () => {
             alt="Menu Icon"
             width={24}
             height={24}
+            loading="lazy"
           />
         </div>
         <nav className={`${styles.nav} ${menuOpen ? styles.navOpen : ""}`}>
@@ -45,6 +47,9 @@ const Header: React.FC = () => {
           <button className={styles.inviteButton}>Request Invite</button>
         </div>
       </div>
+      <div
+        className={`${styles.overlay} ${menuOpen ? styles.overlayActive : ""}`}
+      ></div>
     </header>
   );
 };
