@@ -29,8 +29,8 @@ const Header: React.FC = () => {
           <Image
             src={menuOpen ? "/img/icon-close.svg" : "/img/icon-hamburger.svg"}
             alt="Menu Icon"
-            width={24}
-            height={24}
+            width={menuOpen ? 20 : 24} 
+            height={menuOpen ? 20 : 24}
             loading="lazy"
           />
         </div>
