@@ -15,7 +15,7 @@ const Header: React.FC = () => {
 
   return (
     <header className={styles.header}>
-      <div className={`container mx-auto px-4 ${styles.header_content}`}>
+      <div className={`container mx-auto px-4 ${styles.content}`}>
         <div className={styles.logo}>
           <Image
             src="/img/logo.svg"

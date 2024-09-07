@@ -17,7 +17,8 @@ const Hero: React.FC = () => {
       <div className={styles.imageWrapper}>
         <Image
           src="/img/image-mockups.png"
-          alt="Hero Image"
+          alt="Hero Mockups"
+          className={styles.heroimg}
           layout="responsive"
           width={100}
           height={100}
