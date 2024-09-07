@@ -12,6 +12,7 @@
   @media (max-width: 768px) {
     flex-direction: column-reverse;
   }
+  background-color: $very-light-gray;
   .content {
     display: flex;
     flex-direction: column;
