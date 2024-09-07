@@ -3,3 +3,59 @@
 body {
   @include font;
 }
+
+@media screen and (min-width: 1200px) {
+  br {
+    &.large {
+      display: block;
+    }
+    &.medium {
+      display: none;
+    }
+    &.small {
+      display: none;
+    }
+  }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1199px) {
+  br {
+    &.large {
+      display: block;
+    }
+    &.medium {
+      display: none;
+    }
+    &.small {
+      display: none;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  br {
+    &.large {
+      display: none;
+    }
+    &.medium {
+      display: block;
+    }
+    &.small {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  br {
+    &.large {
+      display: none;
+    }
+    &.medium {
+      display: none;
+    }
+    &.small {
+      display: block;
+    }
+  }
+}

@@ -10,7 +10,6 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 0 1rem;
         @media (max-width: 768px) {
             padding: 25px;
         }
@@ -70,7 +69,7 @@
                         text-align: center;
                     }
                     a {
-                        font-size: 1rem;
+                        font-size: 1.2rem;
                         text-decoration: none;
                         color: $grayish-blue;
                         font-weight: 500;
@@ -99,7 +98,7 @@
                 display: none;
             }
             .inviteButton {
-                font-size: 1rem;
+                font-size: 1.2rem;
                 background: linear-gradient(to left, $bright-cyan, $lime-green);
                 color: $white;
                 border: none;
