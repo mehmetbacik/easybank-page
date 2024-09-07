@@ -12,7 +12,7 @@
     }
     .description {
       font-size: 1.2rem;
-      margin-bottom: 3rem;
+      margin-bottom: 70px;
       color: $grayish-blue;
       margin-left: auto;
       margin-right: auto;
@@ -23,19 +23,19 @@
       @media (max-width: 768px) {
         grid-template-columns: repeat(2, 2fr);
       }
-      gap: 2rem;
+      gap: 50px;
       .feature {
         border-radius: 8px;
         .imageWrapper {
-          margin-bottom: 1.5rem;
+          margin-bottom: 30px;
         }
         .featureTitle {
-          font-size: 1.25rem;
-          margin-bottom: 1rem;
+          font-size: 1.5rem;
           color: $dark-blue;
+          margin-bottom: 20px;
         }
         .featureDescription {
-          font-size: 0.875rem;
+          font-size: 1rem;
           color: $grayish-blue;
         }
       }
