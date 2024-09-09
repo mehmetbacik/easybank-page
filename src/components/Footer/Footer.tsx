@@ -21,7 +21,9 @@ const Footer: React.FC = () => {
           <div className={styles.socialIcons}>
             {socialIcons.map((icon, index) => (
               <Link key={index} href={icon.href}>
-                <Image src={icon.src} alt={icon.alt} width={24} height={24} />
+                <a>
+                  <icon.src />
+                </a>
               </Link>
             ))}
           </div>
