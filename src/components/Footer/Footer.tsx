@@ -8,7 +8,7 @@ import { footerLinks } from "@/data/footerLinksData";
 const Footer: React.FC = () => {
   return (
     <footer className={styles.footer}>
-      <div className={styles.footerContent}>
+      <div className={`container mx-auto px-4 ${styles.footerContent}`}>
         <div className={styles.logoAndSocial}>
           <div className={styles.logo}>
             <Image

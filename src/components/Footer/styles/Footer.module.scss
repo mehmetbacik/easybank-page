@@ -61,15 +61,20 @@
                 margin-top: 20px;
             }
             .inviteButton {
-                background-color: $lime-green;
+                font-size: 1.2rem;
+                background: linear-gradient(to left, $bright-cyan, $lime-green);
                 color: $white;
                 border: none;
-                padding: 10px 20px;
-                border-radius: 20px;
-                cursor: pointer;
-                font-weight: 700;
+                padding: 10px 30px;
+                border-radius: 30px;
+                font-weight: 500;
+                transition: background 0.3s ease;
                 &:hover {
-                    background-color: $lime-green;
+                    background: linear-gradient(
+                        to left,
+                        $light-bright-cyan,
+                        $light-lime-green
+                    );
                 }
             }
             .copyright {
