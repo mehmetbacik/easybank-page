@@ -5,7 +5,7 @@
     color: $white;
     padding: 50px 0;
     @media (max-width: 768px) {
-        padding: 20px;
+        padding: 45px 25px;
     }
     .footerContent {
         display: flex;
@@ -15,6 +15,7 @@
         @media (max-width: 768px) {
             flex-direction: column;
             align-items: center;
+            gap: 25px;
         }
         .logoAndSocial {
             display: flex;
@@ -23,6 +24,7 @@
             justify-content: space-between;
             @media (max-width: 768px) {
                 align-items: center;
+                gap: 10px;
             }
             .socialIcons {
                 margin-top: 20px;
@@ -51,6 +53,9 @@
                         &:hover {
                             color: $lime-green;
                         }
+                        @media (max-width: 768px) {
+                            font-size: 1rem;
+                        }
                     }
                 }
             }
@@ -62,6 +67,7 @@
             justify-content: space-between;
             @media (max-width: 768px) {
                 align-items: center;
+                gap: 25px;
             }
             .inviteButton {
                 font-size: 1.2rem;
@@ -72,6 +78,9 @@
                 border-radius: 30px;
                 font-weight: 500;
                 transition: background 0.3s ease;
+                @media (max-width: 768px) {
+                    font-size: 1rem;
+                }
                 &:hover {
                     background: linear-gradient(
                         to left,
@@ -83,6 +92,9 @@
             .copyright {
                 color: $grayish-blue;
                 font-size: 1rem;
+                @media (max-width: 768px) {
+                    font-size: 0.85rem;
+                }
             }
         }
     }

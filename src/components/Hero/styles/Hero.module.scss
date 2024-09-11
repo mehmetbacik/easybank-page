@@ -13,7 +13,6 @@
   @media (max-width: 768px) {
     flex-direction: column-reverse;
     gap: 0px;
-    padding-bottom: 80px;
   }
   .content {
     display: flex;
@@ -25,6 +24,7 @@
       margin-left: 0;
       align-items: center;
       padding: 0 25px;
+      transform: translateY(-65px);
     }
     .title {
       font-size: 4rem;
