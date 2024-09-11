@@ -6,13 +6,13 @@
   justify-content: center;
   gap: 70px;
   position: relative;
-  overflow: hidden;
   height: 100%;
   max-height: 800px;
   background-color: $very-light-gray;
   @media (max-width: 768px) {
     flex-direction: column-reverse;
     gap: 0px;
+    max-height: max-content;
   }
   .content {
     display: flex;
@@ -98,7 +98,6 @@
       }
     }
     .heroimg {
-      position: relative;
       /*top: -150px;*/
       right: -150px;
       @media (max-width: 768px) {
