@@ -3,12 +3,21 @@
 .features {
   background-color: $light-grayish-blue;
   .content {
-    padding: 150px 0px;
+    padding: 150px 0;
+    @media (max-width: 768px) {
+      padding: 50px 25px;
+    }
     .title {
       font-size: 2.5rem;
       font-weight: 400;
       margin-bottom: 30px;
       color: $dark-blue;
+      line-height: normal;
+      @media (max-width: 768px) {
+        font-size: 1.8rem;
+        line-height: normal;
+        text-align: center;
+      }
     }
     .description {
       font-size: 1.2rem;
@@ -16,27 +25,44 @@
       color: $grayish-blue;
       margin-left: auto;
       margin-right: auto;
+      @media (max-width: 768px) {
+        font-size: 1rem;
+        text-align: center;
+      }
     }
     .featureList {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       @media (max-width: 768px) {
-        grid-template-columns: repeat(2, 2fr);
+        grid-template-columns: repeat(1, 4fr);
       }
       gap: 50px;
       .feature {
         border-radius: 8px;
         .imageWrapper {
           margin-bottom: 30px;
+          @media (max-width: 768px) {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+          }
         }
         .featureTitle {
           font-size: 1.5rem;
           color: $dark-blue;
           margin-bottom: 20px;
+          @media (max-width: 768px) {
+            font-size: 1.2rem;
+            text-align: center;
+            margin-bottom: 15px;
+          }
         }
         .featureDescription {
           font-size: 1rem;
           color: $grayish-blue;
+          @media (max-width: 768px) {
+            text-align: center;
+          }
         }
       }
     }
