@@ -20,6 +20,9 @@
     gap: 30px;
     margin-left: 200px;
     flex: 2;
+    @media only screen and (min-width: 769px) and (max-width: 1024px) {
+      margin-left: 20px;
+    }
     @media (max-width: 768px) {
       margin-left: 0;
       align-items: center;

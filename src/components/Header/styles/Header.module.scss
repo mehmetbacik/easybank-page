@@ -63,6 +63,9 @@
                 }
                 .menuItem {
                     margin: 0 15px;
+                    @media only screen and (min-width: 769px) and (max-width: 1024px) {
+                        margin: 0 10px;
+                    }
                     @media (max-width: 768px) {
                         margin: 5px 0;
                         width: 100%;
@@ -106,6 +109,10 @@
                 border-radius: 30px;
                 font-weight: 500;
                 transition: background 0.3s ease;
+                @media (max-width: 1024px) {
+                    font-size: 1rem;
+                    padding: 10px 15px;
+                }
                 &:hover {
                     background: linear-gradient(
                         to left,
