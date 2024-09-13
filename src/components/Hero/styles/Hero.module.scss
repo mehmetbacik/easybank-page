@@ -20,8 +20,11 @@
     gap: 30px;
     margin-left: 200px;
     flex: 2;
+    @media only screen and (min-width: 1025px) and (max-width: 1300px) {
+      margin-left: 50px;
+    }
     @media only screen and (min-width: 769px) and (max-width: 1024px) {
-      margin-left: 20px;
+      margin-left: 25px;
     }
     @media (max-width: 768px) {
       margin-left: 0;
@@ -106,6 +109,9 @@
     }
     .heroimg {
       transform: translateX(150px);
+      @media only screen and (min-width: 1025px) and (max-width: 1300px) {
+        transform: translateX(90px);
+      }
       @media only screen and (min-width: 769px) and (max-width: 1024px) {
         transform: translateX(0px);
       }

@@ -4,6 +4,9 @@
   background-color: $very-light-gray;
   .content {
     padding: 150px 0px;
+    @media only screen and (min-width: 1025px) and (max-width: 1300px) {
+      padding: 120px 50px;
+    }
     @media only screen and (min-width: 769px) and (max-width: 1024px) {
       padding: 70px 25px;
     }
@@ -24,6 +27,9 @@
     .cards {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
+      @media only screen and (min-width: 1025px) and (max-width: 1300px) {
+        grid-template-columns: repeat(2, 2fr);
+      }
       @media only screen and (min-width: 769px) and (max-width: 1024px) {
         grid-template-columns: repeat(2, 2fr);
       }
