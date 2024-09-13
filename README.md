@@ -4,6 +4,7 @@ This project is a modern landing page for a digital banking solution, designed t
 
 ## Features
 
+- **Header Section:** Contains navigation links and a hamburger menu for mobile devices, ensuring easy access to different sections of the site.
 - **Hero Section:** A visually appealing introduction to Easybank, featuring key messages and a call to action button.
 - **Why Choose Easybank:** Highlights the features and benefits of Easybank using responsive cards with hover effects.
 - **Latest Articles:** Displays the latest articles dynamically, each with an image, title, and description, fetched from a separate data file.
