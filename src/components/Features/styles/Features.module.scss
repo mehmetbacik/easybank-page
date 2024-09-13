@@ -4,6 +4,9 @@
   background-color: $light-grayish-blue;
   .content {
     padding: 150px 0;
+    @media only screen and (min-width: 769px) and (max-width: 1024px) {
+      padding: 50px 25px;
+    }
     @media (max-width: 768px) {
       padding: 50px 25px;
     }
@@ -33,6 +36,9 @@
     .featureList {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
+      @media only screen and (min-width: 769px) and (max-width: 1024px) {
+        grid-template-columns: repeat(2, 2fr);
+      }
       @media (max-width: 768px) {
         grid-template-columns: repeat(1, 4fr);
       }

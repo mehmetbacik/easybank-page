@@ -34,6 +34,9 @@
       font-weight: 400;
       line-height: normal;
       color: $dark-blue;
+      @media only screen and (min-width: 769px) and (max-width: 1024px) {
+        font-size: 2.5rem;
+      }
       @media (max-width: 768px) {
         font-size: 2.2rem;
         text-align: center;
@@ -76,7 +79,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    flex: 4; 
+    flex: 3; 
+    overflow: hidden;
     img {
       max-width: 100%;
       height: auto;
@@ -94,18 +98,19 @@
       right: 0px;
       z-index: -1;
       @media (max-width: 768px) {
-        top: -20px;
+        top: -40px;
         left: 0px;
         background-image: url("/img/bg-intro-mobile.svg");
         background-position: right;
       }
     }
     .heroimg {
-      /*top: -150px;*/
-      right: -150px;
+      transform: translateX(150px);
+      @media only screen and (min-width: 769px) and (max-width: 1024px) {
+        transform: translateX(0px);
+      }
       @media (max-width: 768px) {
-        top: -115px;
-        right: 0;
+        transform: translate3d(0px, -90px, 0px);
       }
     }
   }
